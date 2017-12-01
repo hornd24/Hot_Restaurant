@@ -8,7 +8,14 @@ var PORT = process.env.PORT || 3000;
 
 
 
-
+app.get("/", function(req, res) {
+    res.sendFile(path.join(__dirname, "view.html"));
+  });
+  
+  app.get("/add", function(req, res) {
+    res.sendFile(path.join(__dirname, "view_tables.html"));
+  });
+  
 
 app.listen(PORT, function() {
     console.log("App listening on PORT " + PORT);
