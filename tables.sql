@@ -1,6 +1,5 @@
 
-
-USE hot_Restaurant;
+USE  bsud9ij21mlz20o2;
 
 CREATE TABLE table_list (
   id INT NOT NULL AUTO_INCREMENT,
@@ -17,21 +16,21 @@ CREATE TABLE customer_list(
   PRIMARY KEY (id)
 );
 
-INSERT INTO table_list 
+INSERT INTO table_list (Table_Number)
 VALUES (1);
 
-INSERT INTO table_list 
+INSERT INTO table_list (Table_Number)
 VALUES (2);
 
-INSERT INTO table_list 
+INSERT INTO table_list (Table_Number)
 VALUES (3);
 
 
-INSERT INTO table_list 
+INSERT INTO table_list (Table_Number)
 VALUES (4);
 
 
-INSERT INTO table_list 
+INSERT INTO table_list (Table_Number)
 VALUES (5);
 
 
