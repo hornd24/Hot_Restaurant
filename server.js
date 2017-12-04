@@ -3,6 +3,7 @@ var bodyParser = require("body-parser");
 var path = require("path");
 var mysql      = require('mysql');
 var connection = mysql.createConnection({
+
     host: "xq7t6tasopo9xxbs.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     port: 3306,
   
@@ -31,15 +32,18 @@ var PORT = process.env.PORT || 3000;
 
 
 app.get("/", function(req, res) {
+    res.sendFile(path.join(__dirname, "index.html"));
+  });
+  
+  app.get("/view", function(req, res) {
     res.sendFile(path.join(__dirname, "view.html"));
   });
   
-  app.get("/add", function(req, res) {
-    res.sendFile(path.join(__dirname, "view_tables.html"));
+  app.get("/reserve", function(req, res) {
+    res.sendFile(path.join(__dirname, "reserve.html"));
   });
-  
 
 app.listen(PORT, function() {
     console.log("App listening on PORT " + PORT);
   });
-  
+
